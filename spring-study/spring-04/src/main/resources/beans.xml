@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 使用spring来创建对象 -->
+    <bean id="address" class="com.ju.pojo.Address" >
+        <property name="address" value="上海"/>
+    </bean>
+    <bean id="student" class="com.ju.pojo.Student">
+        <property name="name" value="juzelong1"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>写代码</value>
+                <value>听歌</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="1" value="中国银行"/>
+                <entry key="2" value="工商银行"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>lol</value>
+                <value>bob</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null/>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="driver">123</prop>
+                <prop key="url">www.baidu.com</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

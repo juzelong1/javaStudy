@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: xiaomusi520
+    url: jdbc:mysql://localhost:3306/mybatis?useSSL=false&serverTimezone=GMT%2B8&characterEncoding=utf8&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat,wall,log4j
+
+server:
+  port: 8081
+
+#整合mybatis
+mybatis:
+  type-aliases-package: com.ju.shiro2.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml

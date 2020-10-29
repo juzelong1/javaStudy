@@ -1,0 +1,10 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.com/org">
+
+
+<p th:text="${msg}" style="color: darkblue;"></p>
+<form th:action="@{/login}">
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit">
+
+</form>

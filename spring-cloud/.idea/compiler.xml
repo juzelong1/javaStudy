@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-zuul" />
+        <module name="spring-cloud-consumer-dept-8013" />
+        <module name="spring-cloud-consumer-dept-8012" />
+        <module name="spring-cloud-provider-hystrix-dept-8018" />
+        <module name="spring-cloud-provider-dept-8016" />
+        <module name="spring-cloud-provider-dept-8014" />
+        <module name="spring-cloud-eureka-7003" />
+        <module name="spring-cloud-eureka-7002" />
+        <module name="spring-cloud-eureka-7001" />
+        <module name="spring-cloud-api" />
+        <module name="spring-cloud-consumer-dept-feign" />
+        <module name="springcloud-provider-dept-8001" />
+        <module name="spring-cloud-hystrix-dashboad" />
+      </profile>
+      <profile name="Annotation profile for spring-cloud" enabled="true">
+        <sourceOutputDir name="../spring-cloud-provider-8015/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-cloud-provider-8015/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-provider-dept-8015" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud-consumer-dept-8012" target="1.8" />
+      <module name="spring-cloud-provider-dept-8015" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
